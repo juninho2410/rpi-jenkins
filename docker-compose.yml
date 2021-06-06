@@ -1,0 +1,9 @@
+version: '3'
+services:
+        jenkins-master:
+                image: jenkins-test
+                ports:
+                        - '8080:8080'
+                        - '5000:8000'
+                environment:
+                        JENKINS_OPTS: --argumentsRealm.roles.user=admin --argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=pass
