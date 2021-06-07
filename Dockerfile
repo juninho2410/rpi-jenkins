@@ -7,6 +7,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 	gpg \
 	gnupg2 \
     	default-jre \
+	default-jdk \
 	unzip \
 	libfreetype6 \
 	libfontconfig1 \
