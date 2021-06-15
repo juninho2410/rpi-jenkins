@@ -15,6 +15,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 	wget \
 	software-properties-common \ 
 	libapparmor-dev \
+	ssh \
 	&& apt-get clean && apt-get autoremove -q \
 	&& rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man /tmp/*
 
